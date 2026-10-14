@@ -4,6 +4,20 @@
     font-style: normal;
 }
 
+body {
+    background-color: aliceblue;
+}
+
+header {
+    width: 40%;
+    margin: auto;
+    text-align: center;
+}
+
+header p,
+h1 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
 
 main {
     width: 90%;
@@ -16,59 +30,74 @@ main {
 }
 
 .article {
-    width: 70%;
+    width: 60%;
     height: auto;
     padding: 4%;
-
+    margin: auto;
 
 }
 
 .article:hover {
     transform: scale(1.2);
 }
-.article p{
+
+.article p {
     font-family: "Give You Glory";
+    font-size: 15px;
 }
-.article:has(input:checked){
-background-color: black;
-color: white;
+
+.article:has(input:checked) {
+    background-color: black;
+    color: white;
 
 }
-button:not([type="checkbox"]) :hover{
+button:not([type="checkbox"]){
+    border-radius: 8px;
+    padding: 5px;
+  
+}
+button:not([type="checkbox"]) :hover {
     background-color: brown;
 }
+
 .article p::first-letter {
     text-transform: uppercase;
-    font-size:40px ;
-    
+    font-size: 40px;
+
 }
 
 .article:nth-child(1) {
     background-color: aquamarine;
+    border: 2px solid rgb(55, 144, 114);
     border-radius: 15px;
 }
 
 .article:nth-child(2) {
     background-color: rgb(255, 127, 153);
+    border: 2px solid rgb(147, 29, 52);
     border-radius: 15px;
 }
 
 .article:nth-child(3) {
     background-color: rgb(150, 127, 255);
+    border: 2px solid rgb(74, 56, 154);
     border-radius: 15px;
 }
 
 .article:nth-child(4) {
-    background-color: rgb(252, 0, 189);
+    background-color: rgb(165, 97, 148);
+    border: 2px solid rgb(144, 50, 121);
     border-radius: 15px;
 }
 
 .article:nth-child(5) {
     background-color: khaki;
+    border: 2px solid rgb(147, 137, 44);
     border-radius: 15px;
 }
 
 .article:nth-child(6) {
     background-color: rgb(138, 255, 127);
+border: 2px solid rgb(63, 133, 56);
     border-radius: 15px;
 }
